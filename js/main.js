@@ -13,3 +13,13 @@ document.documentElement.addEventListener("click", function (e) {
     user_icon.classList.remove('active');
   }
 });
+
+/************   input animation    *************/
+$(".input input").focus(function () {
+  $(".input span").addClass("active");
+});
+$(".input input").blur(function () {
+  if ($(".input span").val() === "") {
+    $(".input span").removeClass("active");
+  }
+});
