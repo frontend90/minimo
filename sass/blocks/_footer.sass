@@ -1,0 +1,36 @@
+.footer
+  margin-top: 100px 
+  background: #f0f0f0
+  padding: 40px 0 
+  & .footer-wrap 
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    & .links 
+      & a 
+        display: inline-block
+        color: #000000
+        margin-left: 15px 
+        transition: .3s linear 
+        &:first-of-type
+          margin-left: 0
+        &:hover
+          color: #626262
+    & .social 
+      display: flex 
+      align-items: center
+      & h6 
+        font-size: 14px 
+        color: #000000
+        margin-right: 20px 
+      & a 
+        color: #626262
+        margin-left: 15px 
+        &:first-of-type
+          margin-left: 0
+        & .fab 
+          +brand 
+          font-size: 15px 
+          transition: .3s linear 
+          &:hover
+            opacity: .6
